@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tab Recorder</title>
+    <link href="output.css" rel="stylesheet">
+  </head>
+  <body class="w-[40rem] h-[40rem] p-4 bg-gray-50">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold text-gray-800">Tab Recorder</h2>
+      <button id="closeButton" class="text-gray-500 hover:text-gray-700">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <button 
+      id="startButton" 
+      class="w-full px-4 py-2 mb-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-sm transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+    >
+      Record Tab
+    </button>
+
+    <button 
+      id="stopButton" 
+      class="w-full px-4 py-2 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg shadow-sm transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500/50 disabled:bg-gray-300 disabled:cursor-not-allowed"
+      disabled
+    >
+      Stop Recording
+    </button>
+
+    <div id="status" class="mt-4 text-sm text-center text-gray-600"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

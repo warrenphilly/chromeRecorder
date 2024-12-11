@@ -1,0 +1,22 @@
+{
+   "manifest_version": 3,
+   "name": "Screen Recorder",
+   "version": "1.0",
+   "description": "Records your screen",
+   "action": {
+     "default_popup": "popup.html"
+
+   },
+   "permissions": [
+     "tabs",
+     "activeTab",
+     "downloads",
+     "storage"
+   ],
+   "background": {
+     "service_worker": "background.js"
+   },
+   "host_permissions": [
+     "<all_urls>"
+   ]
+ }
